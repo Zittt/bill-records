@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>common</title>
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
+</div> <!-- /container -->
+<script src="../../js/jQuery/jquery-3.1.1.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+    var arr = new Array("first", "second", "third");
+    for (var item in arr) {
+        console.log(arr[item]);
+    }
+
+    console.log("*******************************");
+
+
+
+    for (var n of arr) {
+       console.log(n);
+    }
+    console.log("*******************************");
+
+    let a1 = 12;
+    var a2 = 13;
+    function test1() {
+        let a3 = 14;
+        console.log("a1=" + a1);
+        console.log("a2=" + a2);
+        console.log("a3=" + a3);
+
+        a1 = 15;
+        console.log("a1=" + a1);
+    }
+    test1();
+    a1 = 16;
+    console.log("a1=" + a1);
+    a3 = 17;
+    console.log("a3=" + a3);
+
+</script>
+
+<script type="text/javascript">
+
+
+
+    console.log("*haha******************************");
+
+//    let a1 = 12;
+//    var a2 = 13;
+//    function test1() {
+//        console.log("a1=" + a1);
+//        console.log("a2=" + a2);
+//    }
+
+</script>
+</body>
+</html>
