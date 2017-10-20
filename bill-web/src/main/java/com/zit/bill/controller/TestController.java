@@ -17,10 +17,23 @@ import javax.servlet.http.HttpServletResponse;
 public class TestController {
     private static final Logger _LOG = LoggerFactory.getLogger(TestController.class);
 
-    @RequestMapping(value = "", method = RequestMethod.GET)
+    public TestController() {
+        System.out.println("hahahahahahah");
+    }
+
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    public ModelAndView index(HttpServletRequest request, HttpServletResponse response,
+                                 ModelAndView mv) {
+
+        mv.setViewName("/index");
+        return mv;
+    }
+
+    @RequestMapping(value = "/test-pass", method = RequestMethod.GET)
     public ModelAndView testPage(HttpServletRequest request, HttpServletResponse response,
             ModelAndView mv) {
 
+        mv.setViewName("/test/test");
         return mv;
     }
 

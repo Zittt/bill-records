@@ -9,15 +9,15 @@
         <param-name>webAppRootKey</param-name>
         <param-value>bill-records</param-value>
     </context-param>
-    <context-param>
-        <param-name>spring.profiles.default</param-name>
-        <param-value>${env}</param-value>
-        <!--<param-value>local</param-value>-->
-    </context-param>
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>classpath*:/spring/spring-mvc.xml</param-value>
-    </context-param>
+    <!--<context-param>-->
+        <!--<param-name>spring.profiles.default</param-name>-->
+        <!--<param-value>${env}</param-value>-->
+        <!--&lt;!&ndash;<param-value>local</param-value>&ndash;&gt;-->
+    <!--</context-param>-->
+    <!--<context-param>-->
+        <!--<param-name>contextConfigLocation</param-name>-->
+        <!--<param-value>classpath*:/spring/spring-mvc.xml</param-value>-->
+    <!--</context-param>-->
 
     <listener>
         <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
@@ -74,7 +74,6 @@
 
 
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 </web-app>
