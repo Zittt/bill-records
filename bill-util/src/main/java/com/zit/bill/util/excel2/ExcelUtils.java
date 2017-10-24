@@ -1,4 +1,4 @@
-package com.zit.bill.util2;
+package com.zit.bill.util.excel2;
 
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFFont;
@@ -11,7 +11,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * Created by zwj9044 on 2017/2/15.
+ * Created by zwj9044 on 2017/10/23.
  */
 public class ExcelUtils {
 

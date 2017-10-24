@@ -1,14 +1,20 @@
-package com.zit.bill.util;
+package com.zit.bill.util.excel.test;
 
-import java.io.*;
+import com.zit.bill.util.excel.ExcelException;
+import com.zit.bill.util.excel.ExcelUtil;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
 /**
- * Created by zwj9044 on 2017/2/15.
+ * Created by zwj9044 on 2017/10/23.
  */
-public class TestExcelUtil {
+public class ExcelUtilTest {
 
     public static void main(String[] args) {
 
@@ -72,5 +78,4 @@ public class TestExcelUtil {
 
 
     }
-
 }

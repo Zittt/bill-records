@@ -1,9 +1,10 @@
-package com.zit.bill.util;
+package com.zit.bill.util.excel.test;
 
 /**
- * Created by zwj9044 on 2017/2/15.
+ * Created by zwj9044 on 2017/10/23.
  */
 public class TestStudentBean {
+
     private String name;
 
     private String address;

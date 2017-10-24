@@ -1,11 +1,12 @@
-package com.zit.bill.util2;
+package com.zit.bill.util.excel2;
 
 import java.io.IOException;
 
 /**
- * Created by zwj9044 on 2017/2/16.
+ * Created by zwj9044 on 2017/10/23.
  */
-public class TestExcelUtil2 {
+public class TestExcelUtils {
+
     public static void main(String[] args) {
 
         try {
