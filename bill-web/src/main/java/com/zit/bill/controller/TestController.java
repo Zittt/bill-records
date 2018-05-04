@@ -3,8 +3,10 @@ package com.zit.bill.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -21,11 +23,11 @@ public class TestController {
         System.out.println("hahahahahahah");
     }
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RequestMapping(value = "/index2", method = RequestMethod.GET)
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response,
                                  ModelAndView mv) {
 
-        mv.setViewName("/index");
+        mv.setViewName("index");
         return mv;
     }
 
@@ -35,6 +37,12 @@ public class TestController {
 
         mv.setViewName("/test/test");
         return mv;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/testG", method = RequestMethod.GET)
+    public Object testGet() {
+        return "lallalla";
     }
 
 }
