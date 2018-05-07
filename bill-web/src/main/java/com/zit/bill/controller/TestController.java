@@ -19,13 +19,10 @@ import javax.servlet.http.HttpServletResponse;
 public class TestController {
     private static final Logger _LOG = LoggerFactory.getLogger(TestController.class);
 
-    public TestController() {
-        System.out.println("hahahahahahah");
-    }
-
-    @RequestMapping(value = "/index2", method = RequestMethod.GET)
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response,
                                  ModelAndView mv) {
+
 
         mv.setViewName("index");
         return mv;
